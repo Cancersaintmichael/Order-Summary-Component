@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="xs:bg-pattern-desktop bg-pattern-mobile bg-pattern bg-repeat-x absolute h-full w-full flex justify-center items-center">
-        <div className="rounded-2xl shadow-lg bg-white overflow-hidden max-w-[400px] min-w-[375px] mx-6">
+        <div className="rounded-2xl shadow-lg bg-white overflow-hidden max-w-[400px] min-w-[350px] mx-6">
           <div>
             <img src={IllustrationHero} alt="Hero illustration" />
           </div>
