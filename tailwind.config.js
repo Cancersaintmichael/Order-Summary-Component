@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '375px',
+        ...defaultTheme.screens,
+      },
       colors: {
         "pale-blue": "#f5f7ff",
         "bright-blue": "#3829e0",
