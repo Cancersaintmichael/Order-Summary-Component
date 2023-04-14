@@ -29,35 +29,37 @@ export default function OrderSummary({
           <div>
             <img src={IllustrationHero} alt="Hero illustration" />
           </div>
-          <div className="xs:px-8 xs:py-10 p-8">
-            <div className="px-4 flex flex-col gap-2 mb-5">
-              <h1 className="capitalize text-dark-blue font-black text-2xl text-center">
-                {title}
-              </h1>
-              <p className="text-center text-desaturated-blue text-base font-medium tracking-wider">
-                {productDescription}
-              </p>
-            </div>
-            <div className="rounded-xl bg-very-pale-blue flex justify-between px-6 py-4 mb-7">
-              <div className="flex gap-4">
-                <img src={IconMusic} alt="Icon music" />
-                <dl>
-                  <dt className="capitalize text-dark-blue font-extrabold">
-                    {planType} plan
-                  </dt>
-                  <dd className="text-desaturated-blue">
-                    {planCurrency}
-                    {planPrice}/year
-                  </dd>
-                </dl>
+          <div className="xs:px-8 xs:py-10 p-8 flex flex-col gap-7">
+            <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
+                <h1 className="capitalize text-dark-blue font-black text-2xl text-center">
+                  {title}
+                </h1>
+                <p className="text-center text-desaturated-blue text-base font-medium tracking-wider">
+                  {productDescription}
+                </p>
               </div>
-              <div className="flex items-center">
-                <button className="text-bright-blue font-bold underline text-sm transition-all hover:text-bright-blue/80 hover:no-underline">
-                  {changePlan}
-                </button>
+              <div className="rounded-xl bg-very-pale-blue flex justify-between px-6 py-4">
+                <div className="flex gap-4">
+                  <img src={IconMusic} alt="Icon music" />
+                  <dl>
+                    <dt className="capitalize text-dark-blue font-extrabold">
+                      {planType} plan
+                    </dt>
+                    <dd className="text-desaturated-blue">
+                      {planCurrency}
+                      {planPrice}/year
+                    </dd>
+                  </dl>
+                </div>
+                <div className="flex items-center">
+                  <button className="text-bright-blue font-bold underline text-sm transition-all hover:text-bright-blue/80 hover:no-underline">
+                    {changePlan}
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="mb-7">
+            <div>
               <button className="bg-bright-blue text-white font-bold w-full rounded-lg xs:py-4 py-3 text-[15px] drop-shadow-2xl tracking-wider transition-colors hover:bg-bright-blue/80">
                 {buttonText}
               </button>
